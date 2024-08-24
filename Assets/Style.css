@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+#nav{
+  height: 150px;
+  width: 100%;
+  background-color: rgb(188, 182, 182);
+  display: flex;
+  align-items: center;
+  padding: 0 150px;
+  justify-content: flex-start;
+  gap: 50px;
+}
+#nav img{
+  height: 80px;
+}
+
+#nav h4{
+  font-weight: 500;
+}
