@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,11 +6,12 @@
   color: #fff;
 }
 
-html, body{
+html, body {
   height: 100%;
   width: 100%;
 }
-#nav{
+
+#nav {
   height: 150px;
   width: 100%;
   background-color: rgb(188, 182, 182);
@@ -19,11 +20,21 @@ html, body{
   padding: 0 150px;
   justify-content: flex-start;
   gap: 50px;
+  position: fixed;
+  z-index: 99;
 }
-#nav img{
+
+#nav img {
   height: 80px;
 }
 
-#nav h4{
+#nav h4 {
   font-weight: 500;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ position: fixed;
 }
