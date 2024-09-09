@@ -398,169 +398,441 @@ margin-bottom: 30px;
 }
 
 
-/* Base styles for the site footer */
-.site-footer {
-  background-color: #26272b;
-  padding: 45px 0 20px;
-  font-size: 15px;
-  line-height: 24px;
-  color: #737373;
+
+
+
+
+
+#page4{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+.elem{
+  height: 70%;
+  width: 26%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
 }
 
-.site-footer hr {
-  border-top-color: #bbb;
-  opacity: 0.5;
+.elem h2{
+  height: 100%;
+  width: 100%;
+  background-color: #95C11E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.5s;
+  font-size: 32px;
+  color: #000;
+  font-weight: 800;
+  position: absolute;
+  z-index: 10;
+
 }
 
-.site-footer hr.small {
-  margin: 20px 0;
+.elem img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+  scale: 1.1;
 }
-
-.site-footer h6 {
+.elem:hover h2{
   color: #fff;
-  font-size: 16px;
+  background-color: transparent;
+}
+.elem:hover img{
+  scale: 1;
+}
+
+#page4 h1{
+  font-size: 80px;
+  position: absolute;
+  top: -2%;
+  font-weight: 900;
+  color: #000;
+  -webkit-text-stroke: 2px #fff;
+  font-family: gilroy;
+}
+
+#footer {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6.5vw;
+  padding: 0 100px;
+}
+#footer > img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+#f1 img {
+  height: 100px;
+}
+#f1,
+#f2,
+#f3,
+#f4 {
+  width: fit-content;
+  position: relative;
+  z-index: 99;
+  /* background-color: red; */
+}
+#f2 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
   text-transform: uppercase;
-  margin-top: 5px;
-  letter-spacing: 2px;
+  color: #000;
+  font-weight: 900;
+  margin-bottom: 8px;
 }
 
-.site-footer a {
-  color: #737373;
-}
-
-.site-footer a:hover {
-  color: #3366cc;
-  text-decoration: none;
-}
-
-.footer-links {
-  padding-left: 0;
-  list-style: none;
-}
-
-.footer-links li {
-  display: block;
-}
-
-.footer-links a {
-  color: #737373;
-}
-
-.footer-links a:active, .footer-links a:focus, .footer-links a:hover {
-  color: #3366cc;
-  text-decoration: none;
-}
-
-.footer-links.inline li {
-  display: inline-block;
-}
-
-.site-footer .social-icons {
-  text-align: right;
-}
-
-.site-footer .social-icons a {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  margin-left: 6px;
-  margin-right: 0;
-  border-radius: 100%;
-  background-color: #33353d;
-  transition: all 0.3s ease-in-out;
-}
-
-.site-footer .social-icons a:hover {
-  background-color: #29aafe;
-  color: #fff;
-}
-
-.copyright-text {
-  margin: 0;
-  color: #737373;
-}
-
-/* Responsive styles */
-@media (max-width: 991px) {
-  .site-footer [class^=col-] {
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .site-footer {
-    padding-bottom: 0;
-  }
-
-  .site-footer .copyright-text, .site-footer .social-icons {
-    text-align: center;
-  }
-}
-
-.social-icons {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.social-icons li {
-  display: inline-block;
-  margin-bottom: 4px;
-}
-
-.social-icons li.title {
-  margin-right: 15px;
+#f3 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
   text-transform: uppercase;
-  color: #96a2b2;
-  font-weight: 700;
-  font-size: 13px;
+  color: #000;
+  font-weight: 800;
+  margin-bottom: 8px;
 }
-
-.social-icons a {
-  background-color: #eceeef;
-  color: #818a91;
-  font-size: 16px;
-  display: inline-block;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  margin-right: 8px;
-  border-radius: 100%;
-  transition: all 0.3s ease-in-out;
+#f4 h4 {
+  font-size: 1vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 8px;
 }
-
-.social-icons a:active, .social-icons a:focus, .social-icons a:hover {
-  color: #fff;
-}
-
-.social-icons.size-sm a {
-  line-height: 34px;
-  height: 34px;
-  width: 34px;
-  font-size: 14px;
-}
-
-.social-icons a.facebook:hover {
-  background-color: #3b5998;
-}
-
-.social-icons a.twitter:hover {
-  background-color: #00aced;
-}
-
-.social-icons a.linkedin:hover {
-  background-color: #007bb6;
-}
-
-.social-icons a.dribbble:hover {
-  background-color: #ea4c89;
-}
-
 @media (max-width: 767px) {
   .social-icons li.title {
     display: block;
     margin-right: 0;
     font-weight: 600;
+  }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #nav {
+    padding: 0 50px;
+    gap: 20px;
+  }
+
+  #page1 h1 {
+    font-size: 100px;
+  }
+
+  #page1 h2 {
+    font-size: 24px;
+  }
+
+  #page1 p {
+    width: 60%;
+  }
+
+  #about-us img {
+    height: 180px;
+    width: 180px;
+  }
+
+  #about-us-in h3 {
+    font-size: 48px;
+  }
+
+  #about-us-in p {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  #green-div h4 {
+    font-size: 20px;
+  }
+
+  .slide-1 img {
+    width: 700px;
+    height: 500px;
+  }
+
+  #page3 p {
+    font-size: 24px;
+  }
+
+  #page3 img {
+    height: 50px;
+  }
+
+  #page4 h1 {
+    font-size: 60px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #nav {
+    padding: 0 80px;
+    gap: 30px;
+  }
+
+  #page1 h1 {
+    font-size: 120px;
+  }
+
+  #page1 h2 {
+    font-size: 26px;
+  }
+
+  #page1 p {
+    width: 70%;
+  }
+
+  #about-us img {
+    height: 200px;
+    width: 200px;
+  }
+
+  #about-us-in h3 {
+    font-size: 50px;
+  }
+
+  #about-us-in p {
+    font-size: 19px;
+  }
+
+  .card {
+    width: 28%;
+  }
+
+  #green-div h4 {
+    font-size: 22px;
+  }
+
+  .slide-1 img {
+    width: 750px;
+    height: 550px;
+  }
+
+  #page3 p {
+    font-size: 26px;
+  }
+
+  #page3 img {
+    height: 55px;
+  }
+
+  #page4 h1 {
+    font-size: 70px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #nav {
+    padding: 0 100px;
+    gap: 40px;
+  }
+
+  #page1 h1 {
+    font-size: 140px;
+  }
+
+  #page1 h2 {
+    font-size: 30px;
+  }
+
+  #page1 p {
+    width: 50%;
+  }
+
+  #about-us img {
+    height: 220px;
+    width: 220px;
+  }
+
+  #about-us-in h3 {
+    font-size: 54px;
+  }
+
+  #about-us-in p {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 25%;
+  }
+
+  #green-div h4 {
+    font-size: 25px;
+  }
+
+  .slide-1 img {
+    width: 800px;
+    height: 600px;
+  }
+
+  #page3 p {
+    font-size: 30px;
+  }
+
+  #page3 img {
+    height: 60px;
+  }
+
+  #page4 h1 {
+    font-size: 80px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #nav {
+    padding: 0 150px;
+    gap: 50px;
+  }
+
+  #page1 h1 {
+    font-size: 160px;
+  }
+
+  #page1 h2 {
+    font-size: 32px;
+  }
+
+  #page1 p {
+    width: 40%;
+  }
+
+  #about-us img {
+    height: 240px;
+    width: 240px;
+  }
+
+  #about-us-in h3 {
+    font-size: 60px;
+  }
+
+  #about-us-in p {
+    font-size: 22px;
+  }
+
+  .card {
+    width: 20%;
+  }
+
+  #green-div h4 {
+    font-size: 30px;
+  }
+
+  .slide-1 img {
+    width: 900px;
+    height: 675px;
+  }
+
+  #page3 p {
+    font-size: 32px;
+  }
+
+  #page3 img {
+    height: 70px;
+  }
+
+  #page4 h1 {
+    font-size: 90px;
+  }
+}
+
+/* Media query for mobile (less than 768px) */
+@media (max-width: 767px) {
+  #nav {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #page1 h1 {
+    font-size: 60px;
+  }
+
+  #page1 h2 {
+    font-size: 18px;
+  }
+
+  #page1 p {
+    width: 80%;
+  }
+
+  #about-us img {
+    height: 150px;
+    width: 150px;
+  }
+
+  #about-us-in h3 {
+    font-size: 36px;
+  }
+
+  #about-us-in p {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #green-div h4 {
+    font-size: 18px;
+  }
+
+  .slide-1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  #page3 p {
+    font-size: 20px;
+  }
+
+  #page3 img {
+    height: 40px;
+  }
+
+  #page4 h1 {
+    font-size: 50px;
+  }
+
+  /* Stack footer items vertically for mobile view */
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #footer > img {
+    height: 80px;
+  }
+
+  #f1, #f2, #f3, #f4 {
+    margin-bottom: 20px;
+  }
+
+  #f2 h3, #f3 h3, #f4 h4 {
+    font-size: 1.2em;
   }
 }
