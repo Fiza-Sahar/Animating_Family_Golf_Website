@@ -252,3 +252,315 @@ margin-bottom: 30px;
 .card:hover{
   transform: rotate3d(-1,1,0,20deg);
 }
+
+#green-div{
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to left bottom, #1FA337, #A8DA22);
+ 
+
+}
+#green-div h4{
+  width: 45%;
+  color: #000;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+#green-div img{
+  height: 100%;
+  object-fit: cover;
+  width: 14%;
+
+}
+#page3{
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* Basic styling for the slider container */
+.slider-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  overflow: hidden; /* Hide overflow content if any */
+  padding: 50px; /* Add padding around the container */
+  gap: 30px;
+
+}
+
+/* Styling for individual slides */
+.slide-1 {
+  display: flex; /* Flex layout for the slide */
+  flex-direction: row; /* Arrange children in a row */
+  align-items: center; /* Center items vertically */
+  gap: 100px;
+  width: 100%; /* Full width */
+  border-radius: 10px; /* Rounded corners for each slide */
+  overflow: hidden; /* Hide overflow content */
+}
+
+/* Styling for the image */
+.slide-1 img {
+  width: 800px; /* Adjust width as needed */
+  height: 600px; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure image covers its area */
+  border-radius: 5px;
+   /* Add a subtle border between image and content */
+}
+
+/* Styling for the content */
+.slide-1 .content {
+  width: 50%; /* Adjust width as needed */
+  padding: 20px; /* Add padding for spacing */
+  box-sizing: border-box; /* Include padding in width calculation */
+   /* Background color for content */
+  text-align: justify; /* Align text to the left */
+}
+
+/* Additional styling for headings and paragraphs */
+.slide-1 .content h2 {
+  font-size: 2.5em; /* Larger font size for heading */
+  color: #fff; /* Darker color for text */
+  margin-bottom: 15px; /* Space below heading */
+}
+
+.slide-1 .content p {
+  font-size: 1.1em; /* Slightly larger font size for paragraphs */
+  color: #fff; /* Lighter color for text */
+  line-height: 1.6; /* Increased line height for readability */
+  margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.slide-1 .content button {
+  padding: 12px 24px; /* Add padding for button */
+  background-color: #1FA337; /* Attractive button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 1.1em; /* Adjust font size as needed */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+.slide-1 .content button:hover {
+  background-color: #ff4500; /* Darker shade on hover */
+}
+
+/* Optional: Add some responsive adjustments if needed */
+@media (max-width: 768px) {
+  .slide-1 {
+    flex-direction: column; /* Stack image and content vertically on smaller screens */
+  }
+
+  .slide-1 img,
+  .slide-1 .content {
+    width: 100%; /* Full width for each section */
+  }
+
+  .slide-1 .content {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+}
+
+
+#page3>p{
+  font-size: 30px;
+  font-weight: 700;
+  width: 60%;
+  text-align: center;
+  line-height: 45px;
+
+}
+
+#page3 img{
+  position: absolute;
+  height: 60px;
+}
+
+#page3 #colon1{
+  left: 15%;
+  top: 25%;
+}
+
+#page3 #colon2{
+  right: 15%;
+  bottom: 30%;
+}
+
+
+/* Base styles for the site footer */
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer hr.small {
+  margin: 20px 0;
+}
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: #737373;
+}
+
+.footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.site-footer .social-icons {
+  text-align: right;
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+  transition: all 0.3s ease-in-out;
+}
+
+.site-footer .social-icons a:hover {
+  background-color: #29aafe;
+  color: #fff;
+}
+
+.copyright-text {
+  margin: 0;
+  color: #737373;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+
+  .site-footer .copyright-text, .site-footer .social-icons {
+    text-align: center;
+  }
+}
+
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+  color: #fff;
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
