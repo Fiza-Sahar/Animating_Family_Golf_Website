@@ -159,7 +159,7 @@ video {
 
 #scroller h4 {
   display: inline-block;
-  font-size: 120px;  /* Default font size for large screens */
+  font-size: 120px;  
   font-weight: 900;
   font-family: gilroy;
   margin-right: 10px;
@@ -250,12 +250,12 @@ margin-bottom: 30px;
 .overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(149, 193, 30, 0.8); /* Slight transparency */
+  background-color: rgba(149, 193, 30, 0.8); 
   padding: 30px;
   padding-top: 160px;
-  opacity: 0; /* Initially hidden */
-  transform: translateY(10px); /* Slide-up effect */
-  transition: all 0.5s ease-in-out; /* Smooth transition */
+  opacity: 0; 
+  transform: translateY(10px); 
+  transition: all 0.5s ease-in-out; 
 }
 
 .overlay h4 {
@@ -272,8 +272,8 @@ margin-bottom: 30px;
 }
 
 .card:hover .overlay {
-  opacity: 1; /* Fully visible on hover */
-  transform: translateY(0); /* Slide-up effect */
+  opacity: 1; 
+  transform: translateY(0); 
 }
 .card:hover{
   transform: rotate3d(-1,1,0,20deg);
@@ -304,7 +304,7 @@ margin-bottom: 30px;
   width: 14%;
 
 }
-#page3{
+#page3 {
   height: 100vh;
   width: 100%;
   background-color: #000;
@@ -313,73 +313,67 @@ margin-bottom: 30px;
   justify-content: center;
   position: relative;
 }
+
 /* Basic styling for the slider container */
+/* Default styles (for large screens) */
 .slider-container {
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center items vertically */
-  overflow: hidden; /* Hide overflow content if any */
-  padding: 50px; /* Add padding around the container */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 50px;
   gap: 30px;
-
 }
 
-/* Styling for individual slides */
 .slide-1 {
-  display: flex; /* Flex layout for the slide */
-  flex-direction: row; /* Arrange children in a row */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 100px;
-  width: 100%; /* Full width */
-  border-radius: 10px; /* Rounded corners for each slide */
-  overflow: hidden; /* Hide overflow content */
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-/* Styling for the image */
 .slide-1 img {
-  width: 800px; /* Adjust width as needed */
-  height: 600px; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure image covers its area */
+  width: 800px;
+  height: 600px;
+  object-fit: cover;
   border-radius: 5px;
-   /* Add a subtle border between image and content */
 }
 
-/* Styling for the content */
 .slide-1 .content {
-  width: 50%; /* Adjust width as needed */
-  padding: 20px; /* Add padding for spacing */
-  box-sizing: border-box; /* Include padding in width calculation */
-   /* Background color for content */
-  text-align: justify; /* Align text to the left */
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
 }
 
-/* Additional styling for headings and paragraphs */
 .slide-1 .content h2 {
-  font-size: 2.5em; /* Larger font size for heading */
-  color: #fff; /* Darker color for text */
-  margin-bottom: 15px; /* Space below heading */
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 15px;
 }
 
 .slide-1 .content p {
-  font-size: 1.1em; /* Slightly larger font size for paragraphs */
-  color: #fff; /* Lighter color for text */
-  line-height: 1.6; /* Increased line height for readability */
-  margin-bottom: 15px; /* Space below paragraphs */
+  font-size: 1.1em;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 .slide-1 .content button {
-  padding: 12px 24px; /* Add padding for button */
-  background-color: #1FA337; /* Attractive button background color */
-  color: #fff; /* Button text color */
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners for button */
-  cursor: pointer; /* Change cursor on hover */
-  font-size: 1.1em; /* Adjust font size as needed */
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  padding: 12px 24px;
+  background-color: #1FA337;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
 .slide-1 .content button:hover {
-  background-color: #ff4500; /* Darker shade on hover */
+  background-color: #ff4500;
 }
 
 /* Optional: Add some responsive adjustments if needed */
@@ -399,30 +393,28 @@ margin-bottom: 30px;
 }
 
 
-#page3>p{
+#page3 > p {
   font-size: 30px;
   font-weight: 700;
   width: 60%;
   text-align: center;
   line-height: 45px;
-
 }
 
-#page3 img{
+#page3 img {
   position: absolute;
   height: 60px;
 }
 
-#page3 #colon1{
+#page3 #colon1 {
   left: 15%;
   top: 25%;
 }
 
-#page3 #colon2{
+#page3 #colon2 {
   right: 15%;
   bottom: 30%;
 }
-
 
 
 
@@ -438,6 +430,7 @@ margin-bottom: 30px;
   gap: 70px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.37);
+  flex-wrap: wrap;
 }
 .elem{
   height: 70%;
@@ -450,38 +443,41 @@ margin-bottom: 30px;
 .elem h2{
   height: 100%;
   width: 100%;
-  background-color: #95C11E;
+  /* background-color: #95C11E; */
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all ease 0.5s;
   font-size: 32px;
-  color: #000;
+  color: #fff;
   font-weight: 800;
   position: absolute;
   z-index: 10;
+  
 
 }
 
 .elem img{
+  
   height: 100%;
   width: 100%;
   object-fit: cover;
   transition: all ease 0.5s;
-  scale: 1.1;
+  transform: scale(1.1);
 }
 .elem:hover h2{
   color: #fff;
-  background-color: transparent;
+  background-color: #95C11E;
+
 }
 .elem:hover img{
-  scale: 1;
+  transform: scale(1);
 }
 
 #page4 h1{
   font-size: 80px;
   position: absolute;
-  top: -2%;
+  top: -13%;
   font-weight: 900;
   color: #000;
   -webkit-text-stroke: 2px #fff;
@@ -489,60 +485,64 @@ margin-bottom: 30px;
 }
 
 #footer {
-  height: 40vh;
   width: 100%;
   background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 6.5vw;
-  padding: 0 100px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  padding: 40px 50px;
 }
+
 #footer > img {
   position: absolute;
   left: 0;
   height: 100%;
   z-index: 0;
+  
 }
+
 #f1 img {
-  height: 100px;
+  height: 80px;
+  
+
 }
+
+/* Footer sections */
 #f1,
 #f2,
 #f3,
 #f4 {
-  width: fit-content;
+  width: 100%;
+  max-width: 250px;
+  margin: 10px 0;
   position: relative;
   z-index: 99;
-  /* background-color: red; */
 }
-#f2 h3 {
-  font-size: 1.6vw;
+
+/* Adjust heading font size for f2 and f3 */
+#f2 h3,
+#f3 h3 {
+  font-size: 1.4rem;
   white-space: nowrap;
   text-transform: uppercase;
   color: #000;
   font-weight: 900;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
-#f3 h3 {
-  font-size: 1.6vw;
-  white-space: nowrap;
-  text-transform: uppercase;
-  color: #000;
-  font-weight: 800;
-  margin-bottom: 8px;
-}
 #f4 h4 {
-  font-size: 1vw;
+  font-size: 1rem;
   white-space: nowrap;
   text-transform: uppercase;
   color: #000;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 1.6;
   margin-bottom: 8px;
 }
+
+
 @media (max-width: 767px) {
   .social-icons li.title {
     display: block;
@@ -550,7 +550,29 @@ margin-bottom: 30px;
     font-weight: 600;
   }
 }
+@media (max-width: 1024px) {
+  #nav img {
+    height: 50px;
+  }
 
+  #nav .nav-links {
+    top: 80px;
+  }
+
+  #nav h4 {
+    font-size: 14px;
+  }
+
+  .toggle-btn {
+    font-size: 24px;
+  }
+}
+
+/* Class to show the nav links when toggled */
+.nav-active {
+  display: flex !important;
+  padding: 30px;
+}
 
 @media (max-width: 768px) {
   #nav {
@@ -782,7 +804,7 @@ margin-bottom: 30px;
   }
 }
 
-/* Tablets in portrait mode */
+
 @media (max-width: 768px) {
   #about-us img {
     margin-bottom: 20px; /* Space below images when stacked vertically */
@@ -812,11 +834,11 @@ margin-bottom: 30px;
   }
 }
 
-/* Extra small devices (below 480px) */
+
 @media (max-width: 480px) {
   #about-us img {
-    margin-bottom: 20px; /* Space below images when stacked vertically */
-    margin-right: 0; /* Remove right margin on small screens */
+    margin-bottom: 20px; 
+    margin-right: 0; 
   }
   #about-us-in h3 {
     font-size: 26px;
@@ -915,5 +937,409 @@ margin-bottom: 30px;
 
   .overlay p {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slider-container {
+    padding: 40px;
+  }
+
+  .slide-1 {
+    flex-direction: column; /* Stack image and content vertically */
+    gap: 20px;
+  }
+
+  .slide-1 img {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .slide-1 .content {
+    width: 100%; /* Full width for content */
+    padding: 15px;
+  }
+
+  .slide-1 .content h2 {
+    font-size: 2em;
+  }
+
+  .slide-1 .content p {
+    font-size: 1em;
+  }
+
+  .slide-1 .content button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider-container {
+    padding: 40px;
+  }
+
+  .slide-1 {
+    flex-direction: column; /* Stack image and content vertically */
+    gap: 20px;
+  }
+
+  .slide-1 img {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .slide-1 .content {
+    width: 100%; /* Full width for content */
+    padding: 15px;
+  }
+
+  .slide-1 .content h2 {
+    font-size: 2em;
+  }
+
+  .slide-1 .content p {
+    font-size: 1em;
+  }
+
+  .slide-1 .content button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}
+
+/* Phones and smaller devices */
+@media (max-width: 768px) {
+  .slide-1 {
+    gap: 10px;
+  }
+
+  .slide-1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .slide-1 .content {
+    padding: 10px;
+  }
+
+  .slide-1 .content h2 {
+    font-size: 1.8em;
+  }
+
+  .slide-1 .content p {
+    font-size: 0.9em;
+  }
+
+  .slide-1 .content button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .slide-1 .content h2 {
+    font-size: 1.6em;
+  }
+
+  .slide-1 .content p {
+    font-size: 0.8em;
+  }
+
+  .slide-1 .content button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 480px) {
+  .slide-1 .content h2 {
+    font-size: 1.4em;
+  }
+
+  .slide-1 .content p {
+    font-size: 0.7em;
+  }
+
+  .slide-1 .content button {
+    padding: 5px 10px;
+    font-size: 0.7em;
+  }
+}
+
+/* Tablets in portrait mode */
+@media (max-width: 992px) {
+  #page3 > p {
+    font-size: 24px;
+    width: 70%;
+    line-height: 40px;
+    padding: 20px;
+  }
+
+  #page3 #colon1 {
+    height: 45px;
+    left: 20%;
+    top: 25%;
+  }
+
+  #page3 #colon2 {
+    height: 45px;
+    right: 20%;
+    bottom: 25%;
+  }
+}
+
+/* Tablets in landscape mode and smaller screens */
+@media (max-width: 768px) {
+  #page3 > p {
+    font-size: 20px;
+    width: 80%;
+    line-height: 35px;
+    padding: 20px;
+  }
+
+  #page3 #colon1 {
+    height: 30px;
+    left: 20%;
+    top: 25%;
+  }
+
+  #page3 #colon2 {
+    height: 30px;
+    right: 20%;
+    bottom: 25%;
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+  #page3 > p {
+    font-size: 18px;
+    width: 90%;
+    line-height: 30px;
+    padding: 25px;
+  }
+
+  #page3 #colon1 {
+    height: 30px;
+    left: 20%;
+    top: 25%;
+  }
+
+  #page3 #colon2 {
+    height: 30px;
+    right: 20%;
+    bottom: 25%;
+  }
+}
+
+/* Extra small devices (below 480px) */
+@media (max-width: 480px) {
+  #page3 > p {
+    font-size: 16px;
+    width: 100%;
+    line-height: 28px;
+    padding: 20px;
+  }
+
+  #page3 #colon1 {
+    height: 30px;
+    left: 15%;
+    top: 10%;
+  }
+
+  #page3 #colon2 {
+    height: 30px;
+    right: 15%;
+    bottom: 10%;
+  }
+}
+
+/* Medium devices (tablets, 992px and down) */
+@media (max-width: 992px) {
+  #page4 {
+    gap: 30px;
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow auto height for wrapping */
+   
+  }
+
+  .elem {
+    width: 40%; /* Adjust width for tablets */
+    height: 60%;
+  }
+
+  .elem h2 {
+    font-size: 26px;
+  }
+
+  #page4 h1 {
+    font-size: 60px;
+    top: -5%;
+  }
+}
+
+@media (max-width: 768px) {
+  #page4 {
+    gap: 30px;
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow auto height for wrapping */
+    padding: 30px;
+  }
+
+  .elem {
+    width: 80%; /* Adjust width for small screens */
+    height: 200px; /* Adjust height for small screens */
+  }
+
+  .elem h2 {
+    font-size: 22px;
+  }
+
+  #page4 h1 {
+    font-size: 50px;
+    top: 0;
+  }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+  #page4 {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .elem {
+    width: 90%; /* Full width for extra small screens */
+    height: 180px; /* Adjust height for extra small screens */
+  }
+
+  .elem h2 {
+    font-size: 18px;
+  }
+
+  #page4 h1 {
+    font-size: 40px;
+    top: 5%;
+  }
+}
+
+/* Very small devices (phones in portrait, 480px and down) */
+@media (max-width: 480px) {
+  #page4 {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .elem {
+    width: 100%; /* Full width for very small screens */
+    height: 150px; /* Adjust height for very small screens */
+  }
+
+  .elem h2 {
+    font-size: 16px;
+  }
+
+  #page4 h1 {
+    font-size: 30px;
+    top: 10%;
+  }
+}
+
+/* Medium devices (tablets, 992px and down) */
+@media (max-width: 992px) {
+  #footer {
+    padding: 30px;
+    justify-content: space-around; /* Adjust alignment for tablets */
+    z-index: 10;
+  }
+
+  #f1 img {
+    height: 70px; /* Resize logo for tablets */
+   
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 1.2rem; /* Adjust heading font size for tablets */
+  }
+
+  #f4 h4 {
+    font-size: 0.9rem; /* Adjust address text for tablets */
+    line-height: 1.5;
+  }
+}
+
+/* Small devices (landscape phones, 768px and down) */
+@media (max-width: 768px) {
+  #footer {
+   margin-top: 10px;
+    flex-direction: column; /* Stack footer sections vertically */
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  #footer > img {
+    display: none; /* Hide background image on smaller screens */
+  }
+
+  #f1 img {
+    height: 60px; /* Further resize logo */
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 1.5rem; /* Increase font size for readability on smaller screens */
+  }
+
+  #f4 h4 {
+    font-size: 1rem; /* Adjust address text size */
+    line-height: 1.4;
+  }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+  #footer {
+    padding: 25px;
+  }
+
+  #f1 img {
+    height: 50px; /* Further resize logo */
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 1.3rem; /* Adjust font size for small devices */
+  }
+
+  #f4 h4 {
+    font-size: 0.8rem; /* Adjust address text size */
+    line-height: 1.2;
+  }
+}
+
+/* Very small devices (phones in portrait, 480px and down) */
+@media (max-width: 480px) {
+  #footer {
+    padding: 10px;
+    gap: 10px; /* Reduce gap between elements */
+  }
+
+  #f1 img {
+    height: 40px; /* Resize logo for very small screens */
+   
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 1.1rem; /* Further adjust font size for very small screens */
+  }
+
+  #f4 h4 {
+    font-size: 0.7rem;
+    line-height: 1.2;
   }
 }
