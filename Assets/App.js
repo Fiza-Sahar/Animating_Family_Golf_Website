@@ -1,3 +1,10 @@
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('nav-active');
+}
+
+
+
 var crsr = document.querySelector("#cursor")
 var blur = document.querySelector("#cursor-blur")
 
@@ -48,7 +55,7 @@ gsap.to("#main",{
     trigger: "#main",
     scroller: "body",
     // markers: true
-    markers : true,
+    // markers : true,
     start : "top -25%",
     end: "top -70%",
     scrub : 2
